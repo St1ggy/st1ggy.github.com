@@ -1,50 +1,16 @@
 <!DOCTYPE html>
-
-<head>
-  <script>
-    //      intercom JS library
-    var APP_ID = '';
-    (function () {
-      debugger;
-      console.log("Executing function main...");
-      var w = window;
-      var ic = w.Intercom;
-      if (typeof ic === "function") {
-        ic('reattach_activator');
-        ic('update', intercomSettings);
-      } else {
-        var d = document;
-        var i = function () {
-          i.c(arguments)
-        };
-        i.q = [];
-        i.c = function (args) {
-          i.q.push(args)
-        };
-        w.Intercom = i;
-
-        function l() {
-          debugger;
-          console.log("Executing function l...");
-          var s = d.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = 'https://widget.intercom.io/widget/' + APP_ID;
-          var x = d.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        }
-
-        if (w.attachEvent) {
-          w.attachEvent('onload', l);
-        } else {
-          w.addEventListener('load', l, false);
-        }
-      }
-    })();
-  </script>
-</head>
-
-<body>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script type="module" crossorigin src="/assets/index.bae29dd8.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.d928d057.js">
+    <link rel="stylesheet" href="/assets/index.c2d03b7b.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
 </html>
